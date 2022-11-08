@@ -15,11 +15,9 @@ https://github.com/jschang19/plusone-linebot
 
 ## 測試畫面
 這是糾團群組截圖，只要有打店名關鍵字, ex:麥當勞 ，機器人會自動從google表單搜尋, 然後回傳菜單
-<img src ="">
-<img src ="">
-pic23
-pic24
+<img src ="https://upload.cc/i1/2022/11/08/v7hjew.png">
 
+<img src ="https://upload.cc/i1/2022/11/08/02esmU.png">
 
 資料都是存在 Google 試算表裡, 方便直接更改, 不用另外學資料庫的使用：
 
