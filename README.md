@@ -15,9 +15,11 @@ https://github.com/jschang19/plusone-linebot
 
 ## 測試畫面
 這是糾團群組截圖，只要有打店名關鍵字, ex:麥當勞 ，機器人會自動從google表單搜尋, 然後回傳菜單
+<img src ="">
+<img src ="">
 pic23
 pic24
-<img src ="https://i2.wp.com/jcshawn.com/wp-content/uploads/2021/08/%E6%88%AA%E5%9C%96-2021-08-16-%E4%B8%8A%E5%8D%8811.51.02.png?w=375&ssl=1">
+
 
 資料都是存在 Google 試算表裡, 方便直接更改, 不用另外學資料庫的使用：
 
@@ -35,39 +37,38 @@ Creat Provider -> 取一個BOT name
 <img src ="https://upload.cc/i1/2022/11/08/aXZpYt.png">
 
 Channel -> "Creat a Messaging API Channel"
-pic2
-
+<img src ="https://upload.cc/i1/2022/11/08/OW7snA.png">
 
 該填入的資訊填一填, 可以換個BOT頭貼
-pic3
+<img src ="https://upload.cc/i1/2022/11/08/pre97g.png">
 
 這樣就建好一個LineBot了
-pic4
+<img src ="https://upload.cc/i1/2022/11/08/6avoux.png">
 
 2.
 進入"Messaging API"
-pic5
+<img src ="https://upload.cc/i1/2022/11/08/gMwlTy.png">
 
 點Edit進入
-pic6
+<img src ="https://upload.cc/i1/2022/11/08/ldoWF8.png">
 
 把 Allow bot to join group chats 改 "Enable"
 把 Auto-reply messages 改 "Disable"
-pic7
-pic8
+<img src ="https://upload.cc/i1/2022/11/08/2C3Vmj.png">
+<img src ="https://upload.cc/i1/2022/11/08/DkmFCN.png">
 
 3. 
 點下 Issue, 從這裡取得 LINE API Token
 ex: 
 Q+nAAAA5A5shRBj/fHrRoaEsOzz96GjlZSmm44lhdat+SUQ57Qrx6eO9+KwDgBXyPM6Y9ycgUiIdJMkgiBmHmtjZh/RkxLvQkHd9+eT6GpV+xu6gPOpn6Bd3ZzXBczxOeDKxFE4oLkkYM7gDLrszxQdB04t89/1O/w1cDAAAcsw=
-pic9
+
+<img src ="https://upload.cc/i1/2022/11/08/t1Gd97.png">
 
 4.
 進入Google雲端硬碟: https://drive.google.com/drive/my-drive
 新增一個試算表
 並且右上角的"共用"按鈕, 將權限改成如下圖
-pic12
-
+<img src ="https://upload.cc/i1/2022/11/08/wHSPs3.png">
 
 把URL複製下來, 等下使用
 ex:
@@ -81,62 +82,61 @@ EX:
 5.
 進入Google雲端硬碟: https://drive.google.com/drive/my-drive
 新增一個 "Google Apps Scripts"文件
-pic10
+<img src ="https://upload.cc/i1/2022/11/08/Z10pdw.png">
 
 專案名稱可以改名
-pic11
+<img src ="https://upload.cc/i1/2022/11/08/C80oQi.png">
 
 將 menubot.js 的內容複製，貼到右邊編輯的區域,
-pic13
+<img src ="https://upload.cc/i1/2022/11/08/cN0daV.png">
 
 修改變數
 CHANNEL_ACCESS_TOKEN //第12行 改上面拿到的LINE API Token
 const sheet_url //第32行 改上面拿到的google試算表URL
 const sheet_name = 'data'; //第33行 google試算表 工作表1的名字
-pic14
+<img src ="https://upload.cc/i1/2022/11/08/oVSsTu.png">
 
 6.
 右上角 部屬->新增部屬作業
-pic13
+<img src ="https://upload.cc/i1/2022/11/08/cN0daV.png">
 
 點選設定按鈕-> "網路應用程式"
-pic15
+<img src ="https://upload.cc/i1/2022/11/08/nVDP72.png">
 
 權限改"所有人", 說明隨便打, 然後點"部屬"
-pic16
+<img src ="https://upload.cc/i1/2022/11/08/ERNBOs.png">
 
 點"授予存取權", 然後登入google帳號
 選最下面 Unsafe連結 -> 下個畫面再點"Allow"
-pic17
+<img src ="https://upload.cc/i1/2022/11/08/5faroW.png">
 
 最後得到URL, 將其複製下來, 這是等下要填到LINE BOT的Webhook URL資料
-pic18
+<img src ="https://upload.cc/i1/2022/11/08/GwqJ2F.png">
 
 7.
 再回到 https://developers.line.biz/zh-hant/ 
 把剛剛得到的URL填入
-pic19
+<img src ="https://upload.cc/i1/2022/11/08/ykRPn8.png">
 
 "Use webhook" 打開
-pic22
-
+<img src ="https://upload.cc/i1/2022/11/08/cZwMa4.png">
 這樣就設定完了!!
 
 8.
 測試, 透過網頁上的 bot id 來把機器人加入好友
-pic20
-pic21
+<img src ="https://upload.cc/i1/2022/11/08/N8inEt.png">
+<img src ="https://upload.cc/i1/2022/11/08/maMJhF.png">
 
 跟機器人講話 ex:麥當勞
 看到回應菜單就成功了
-pic23
+<img src ="https://upload.cc/i1/2022/11/08/v7hjew.png">
 
 回傳URL測試, ex:訂飲料
 大家就可以直接上該表單去填寫要喝什麼飲料
-pic24
+<img src ="https://upload.cc/i1/2022/11/08/02esmU.png">
 
 menu -h 會跳出資料庫URL, 方便新增加菜單
-
+<img src ="https://upload.cc/i1/2022/11/08/AOlFkI.png">
 
 ## 參考資料
 - [做個 LINE 機器人記錄誰 +1！群組 LINE Bot 製作教學與分享](https://jcshawn.com/addone-linebot/)
