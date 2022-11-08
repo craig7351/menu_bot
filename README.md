@@ -47,20 +47,25 @@ Channel -> "Creat a Messaging API Channel"
 進入"Messaging API"
 <img src ="https://upload.cc/i1/2022/11/08/gMwlTy.png">
 
-點Edit進入
-<img src ="https://upload.cc/i1/2022/11/08/ldoWF8.png">
-
 把 Allow bot to join group chats 改 "Enable"
 把 Auto-reply messages 改 "Disable"
+點Edit進入修改
+<img src ="https://upload.cc/i1/2022/11/08/ldoWF8.png">
+
+按照紅框設定:
+加入好友歡迎訊息: 停用
+自動回應: 停用
+Webhook: 啟用
 <img src ="https://upload.cc/i1/2022/11/08/2C3Vmj.png">
+
+加入群組或多人聊天室: 接受
 <img src ="https://upload.cc/i1/2022/11/08/DkmFCN.png">
 
-3. 
-點下 Issue, 從這裡取得 LINE API Token
+3. 點下 Issue, 從這裡取得 LINE API Token
+<img src ="https://upload.cc/i1/2022/11/08/t1Gd97.png">
+
 ex: 
 Q+nAAAA5A5shRBj/fHrRoaEsOzz96GjlZSmm44lhdat+SUQ57Qrx6eO9+KwDgBXyPM6Y9ycgUiIdJMkgiBmHmtjZh/RkxLvQkHd9+eT6GpV+xu6gPOpn6Bd3ZzXBczxOeDKxFE4oLkkYM7gDLrszxQdB04t89/1O/w1cDAAAcsw=
-
-<img src ="https://upload.cc/i1/2022/11/08/t1Gd97.png">
 
 4.
 進入Google雲端硬碟: https://drive.google.com/drive/my-drive
@@ -68,14 +73,12 @@ Q+nAAAA5A5shRBj/fHrRoaEsOzz96GjlZSmm44lhdat+SUQ57Qrx6eO9+KwDgBXyPM6Y9ycgUiIdJMkg
 並且右上角的"共用"按鈕, 將權限改成如下圖
 <img src ="https://upload.cc/i1/2022/11/08/wHSPs3.png">
 
-把URL複製下來, 等下使用
+把URL複製下來, 等下會用到
 ex:
 https://docs.google.com/spreadsheets/d/1GOt-69ccP-RwVcgR7Y4tuZvBZvFOzNDzZgLCLv1lSIg/edit#gid=0
 
+Excel欄位說明:
 A欄位為關鍵字 B欄位為URL C欄位用來放圖片的判斷:1為圖 0為String
-EX:
-麥當勞	https://upload.cc/i1/2020/11/05/HvXgSE.png	1
-定飲料	https://docs.google.com/spreadsheets/d/1CAcF7zyTUFYkqnd7dkkfmwofDjQaw_J9cxmfJmK0sgE/edit?usp=sharing	0
 
 5.
 進入Google雲端硬碟: https://drive.google.com/drive/my-drive
@@ -89,9 +92,9 @@ EX:
 <img src ="https://upload.cc/i1/2022/11/08/cN0daV.png">
 
 修改變數
-CHANNEL_ACCESS_TOKEN //第12行 改上面拿到的LINE API Token
-const sheet_url //第32行 改上面拿到的google試算表URL
-const sheet_name = 'data'; //第33行 google試算表 工作表1的名字
+- CHANNEL_ACCESS_TOKEN //第12行 改上面拿到的LINE API Token
+- sheet_url //第32行 改上面拿到的google試算表URL
+- sheet_name = 'data'; //第33行 google試算表 "工作表" 的名字 如下圖
 <img src ="https://upload.cc/i1/2022/11/08/oVSsTu.png">
 
 6.
@@ -120,8 +123,8 @@ const sheet_name = 'data'; //第33行 google試算表 工作表1的名字
 <img src ="https://upload.cc/i1/2022/11/08/cZwMa4.png">
 這樣就設定完了!!
 
-8.
-測試, 透過網頁上的 bot id 來把機器人加入好友
+## 測試
+透過網頁上的 bot id 來把機器人加入好友
 <img src ="https://upload.cc/i1/2022/11/08/N8inEt.png">
 <img src ="https://upload.cc/i1/2022/11/08/maMJhF.png">
 
