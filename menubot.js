@@ -9,7 +9,7 @@
 
 function doPost(e) {
     // LINE Messenging API Token
-    var CHANNEL_ACCESS_TOKEN = 'Q+nATXr5A5shRBj/fHrRoaEsOzz96GjlZSmm44lhdat+SUQ57Qrx6eO9+KwDgBXyPM6Y9ycgUiIdJMkgiBmHmtjZh/RkxLvQkHd9+eT6GpV+xu6gPOpn6Bd3ZzXBczxOeDKxFE4oLkkYM7gDLrszxQdB04t89/1O/w1cDnyilFU=';
+    var CHANNEL_ACCESS_TOKEN = 'Q+nATXrAAA5shRBj/fHrRoaEsOzz96GjlZSmm44lhdat+SUQ57Qrx6eO9+KwDgBXyPM6Y9ycgUiIdJMkgiBmHmtjZh/RkxLvQkHd9+eT6GpV+xu6gPOpn6Bd3ZzXBczxOeDKxFE4oLkkYM7gDLrszxQdB04t89/1O/w1cDnyilFU=';
 	
     // 以 JSON 格式解析 User 端傳來的 e 資料
     var msg = JSON.parse(e.postData.contents);
